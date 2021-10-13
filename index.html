@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>LIBRARIA Online Library</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="./libs/fontawesomepro/css/all.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="img/logo.png" alt="logo" />
+            </div>
+            <div class="bar">
+                <div class="up-bar">
+                    <a href="tel:09795020540"><i class="fas fa-phone-alt"></i> +959-795-020-540</a>
+                    <span>/</span>
+                    <a href="mailto:kyawzinwin14142003@gmail.com"><i class="fas fa-envelope"></i>
+                        kyawzinwin1414003@gmail.com</i></a>
+                    <a href="#"><i class="fas fa-lock"></i> Login / Register</a>
+                    <span>|</span>
+                    <a href="#">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span>2</span>
+                        <div class="buy-box">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td><img src="img/book1.jpg" /></td>
+                                        <td>
+                                            <p>ဂရုမစိုက်ခြင်း အနုပညာ</p>
+                                            <span>Translated by : ချမ်းမြေ့ဝင်း</span>
+                                        </td>
+                                        <td><i class="far fa-trash-alt"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="img/book2.jpg" /></td>
+                                        <td>
+                                            <p>တစ်သက်တာမှတ်တမ်းနှင့် အတွေးအခေါ်များ</p>
+                                            <span>Author : ရွှေဥဒေါင်း</span>
+                                        </td>
+                                        <td><i class="far fa-trash-alt"></i></td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td class="buy-box-total">Subtotal</td>
+                                        <td colspan="2" class="buy-box-total">10,000 mmk</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="buy-box-total"><button>Cart</button></td>
+                                        <td colspan="2" class="buy-box-total"><button>Checkout</button></td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </a>
+                </div>
+                <div class="down-bar">
+                    <ul>
+                        <li>
+                            <a href="#" class="active">Home</a>
+                            <ul>
+                                <li><a href="#">Home1</a></li>
+                                <li><a href="#">Home2</a></li>
+                                <li><a href="#">Home3</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Books & Media</a>
+                            <ul>
+                                <li><a href="#">List View</a></li>
+                                <li><a href="#">GridView V1</a></li>
+                                <li><a href="#">GridView V2</a></li>
+                                <li><a href="#">Details V1</a></li>
+                                <li><a href="#">Details V2</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">News & Events</a>
+                            <ul>
+                                <li><a href="#">List View</a></li>
+                                <li><a href="#">Events Details</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Pages</a>
+                            <ul>
+                                <li><a href="#">Cart</a></li>
+                                <li><a href="#">Checkout</a></li>
+                                <li><a href="#">Signin/Register</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Blog</a>
+                            <ul>
+                                <li><a href="#">Grid View</a></li>
+                                <li><a href="#">Details</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cover">
+        <div class="cover-text-box">
+            <p>Online Learning Anytime, Anywhere!</p>
+            <p>Discover Your Roots</p>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                alteration
+                in some form, by injected humor, or randomized words.</p>
+            <div class="buttons">
+                <button>Read More</button>
+                <button>Purchase</button>
+            </div>
+            <i class="fas fa-chevron-left"></i>
+            <i class="fas fa-chevron-right"></i>
+        </div>
+    </div>
+
+    <div id="search" class="search">
+        <div class="search-container">
+            <h4>What are you looking for at the Library?</h4>
+            <div>
+                <input type="text" name="search" id="search" class="search" placeholder="Search by Keyword" />
+                <select name="catalog" id="catalog" class="catalog">
+                    <option>Search the catalog</option>
+                    <option value="0" class="option">catalog 01</option>
+                    <option value="1" class="option">catalog 02</option>
+                    <option value="2" class="option">catalog 03</option>
+                    <option value="3" class="option">catalog 04</option>
+                    <option value="4" class="option">catalog 05</option>
+                </select>
+                <select name="catagory" id="catagory" class="catagory">
+                    <option value="0">All Catagories</option>
+                    <option value="1">Catagory 01</option>
+                    <option value="2">Catagory 02</option>
+                    <option value="3">Catagory 03</option>
+                    <option value="4">Catagory 04</option>
+                    <option value="5">Catagory 05</option>
+                </select>
+                <button>Searh</button>
+            </div>
+        </div>
+        <div class="welcome-container">
+            <div class="welcome-text">
+                <div>
+                    <h3>WELCOME TO THE LIBRARIA</h3>
+                    <p>The standard chunk of Lorem Ipsum used since</p>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                        alteration in some form, by injected humor, or randomized words which don't look even slightly
+                        believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                        anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the
+                        Internet
+                        tend to repeat predefined chunks as necessary, making this the first true generator on the
+                        Internet.
+                        It uses a dictionary of over 200 Latin words, combined with a handful of model sentence
+                        structures,
+                        to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always
+                        free
+                        from repetition, injected humor, or non-characteristic words etc.</p>
+                    <button>Read More</button>
+                </div>
+            </div>
+            <div class="icons">
+                <div>
+                    <div><i class="fas fa-laptop"></i></div>
+                    <div>
+                        <p>eBooks</p>
+                        <p>12345</p>
+                    </div>
+                </div>
+                <div>
+                    <div><i class="fas fa-headphones"></i></div>
+                    <div>
+                        <p>eAudio</p>
+                        <p>5431</p>
+                    </div>
+                </div>
+                <div>
+                    <div><i class="fas fa-book"></i></div>
+                    <div>
+                        <p>Magazines</p>
+                        <p>10000</p>
+                    </div>
+                </div>
+                <div>
+                    <div><i class="fas fa-laptop-code"></i></div>
+                    <div>
+                        <p>Videos</p>
+                        <p>20000</p>
+                    </div>
+                </div>
+            </div>
+            <div class="welcome-photo"></div>
+        </div>
+    </div>
+
+    <div id="checkout" class="checkout">
+        <div class="checkout-header">
+            <h3>CHECK OUT THE NEW RELEASES</h3>
+            <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.</p>
+        </div>
+        <div class="checkout-bar">
+            <ul>
+                <li class="active">All Release</li>
+                <li>Adults</li>
+                <li>Kids & Teens</li>
+                <li>Video</li>
+                <li>Books</li>
+                <li>Audio</li>
+                <li>Magazine</li>
+            </ul>
+        </div>
+        <div class="checkout-book">
+            <div>
+                <div>
+                    <div>
+                        <h5>ဂရုမစိုက်ခြင်း အနုပညာ</h5>
+                        <p>Translated by : ချမ်းမြေ့ဝင်း</p>
+                        <div class="stars">
+                            <i class="fas fa-star">
+                                <i class="fas fa-star">
+                                    <i class="fas fa-star">
+                                        <i class="fas fa-star">
+                                            <i class="fas fa-star"></i>
+                                        </i>
+                                    </i>
+                                </i>
+                            </i>
+                        </div>
+                        <p>It is a long established fact that a reader will be distracted by the readable content</p>
+                        <div class="checkout-icons">
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-envelope"></i>
+                            <i class="fas fa-share-alt"></i>
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h5>တစ်သက်တာမှတ်တမ်းနှင့် အတွေးအခေါ်များ</h5>
+                        <p>Author : ရွှေဥဒေါင်း</p>
+                        <div class="stars">
+                            <i class="fas fa-star">
+                                <i class="fas fa-star">
+                                    <i class="fas fa-star">
+                                        <i class="fas fa-star">
+                                            <i class="fas fa-star"></i>
+                                        </i>
+                                    </i>
+                                </i>
+                            </i>
+                        </div>
+                        <p>It is a long established fact that a reader will be distracted by the readable content</p>
+                        <div class="checkout-icons">
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-envelope"></i>
+                            <i class="fas fa-share-alt"></i>
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h5>ပန်းမြိုင်လယ်ကဥယျာဥ်မှူး</h5>
+                        <p>Author : လယ်တွင်းသားစောချစ်</p>
+                        <div class="stars">
+                            <i class="fas fa-star">
+                                <i class="fas fa-star">
+                                    <i class="fas fa-star">
+                                        <i class="fas fa-star">
+                                            <i class="fas fa-star"></i>
+                                        </i>
+                                    </i>
+                                </i>
+                            </i>
+                        </div>
+                        <p>It is a long established fact that a reader will be distracted by the readable content</p>
+                        <div class="checkout-icons">
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-envelope"></i>
+                            <i class="fas fa-share-alt"></i>
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h5>ကျွန်တော့်ဘဝဇာတ်ကြောင်း</h5>
+                        <p>Author : သော်တာဆွေ</p>
+                        <div class="stars">
+                            <i class="fas fa-star">
+                                <i class="fas fa-star">
+                                    <i class="fas fa-star">
+                                        <i class="fas fa-star">
+                                            <i class="fas fa-star"></i>
+                                        </i>
+                                    </i>
+                                </i>
+                            </i>
+                        </div>
+                        <p>It is a long established fact that a reader will be distracted by the readable content</p>
+                        <div class="checkout-icons">
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-envelope"></i>
+                            <i class="fas fa-share-alt"></i>
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div>
+                        <h5>Harry Potter Book Set</h5>
+                        <p>Author : J. K. Rowling</p>
+                        <div class="stars">
+                            <i class="fas fa-star">
+                                <i class="fas fa-star">
+                                    <i class="fas fa-star">
+                                        <i class="fas fa-star">
+                                            <i class="fas fa-star"></i>
+                                        </i>
+                                    </i>
+                                </i>
+                            </i>
+                        </div>
+                        <p>It is a long established fact that a reader will be distracted by the readable content</p>
+                        <div class="checkout-icons">
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-envelope"></i>
+                            <i class="fas fa-share-alt"></i>
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h5>သူ့လိုလူ</h5>
+                        <p>Author : ဂျာနယ်ကျော်မမလေး</p>
+                        <div class="stars">
+                            <i class="fas fa-star">
+                                <i class="fas fa-star">
+                                    <i class="fas fa-star">
+                                        <i class="fas fa-star">
+                                            <i class="fas fa-star"></i>
+                                        </i>
+                                    </i>
+                                </i>
+                            </i>
+                        </div>
+                        <p>It is a long established fact that a reader will be distracted by the readable content</p>
+                        <div class="checkout-icons">
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-envelope"></i>
+                            <i class="fas fa-share-alt"></i>
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h5>Goodnight Moon</h5>
+                        <p>Author : Margaret Wise Brown</p>
+                        <div class="stars">
+                            <i class="fas fa-star">
+                                <i class="fas fa-star">
+                                    <i class="fas fa-star">
+                                        <i class="fas fa-star">
+                                            <i class="fas fa-star"></i>
+                                        </i>
+                                    </i>
+                                </i>
+                            </i>
+                        </div>
+                        <p>It is a long established fact that a reader will be distracted by the readable content</p>
+                        <div class="checkout-icons">
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-envelope"></i>
+                            <i class="fas fa-share-alt"></i>
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h5>သူငယ်ချင်းလို့ဘဲဆက်၍ခေါ်မည် ခိုင်</h5>
+                        <p>Author : တက္ကသိုလ်ဘုန်းနိုင်</p>
+                        <div class="stars">
+                            <i class="fas fa-star">
+                                <i class="fas fa-star">
+                                    <i class="fas fa-star">
+                                        <i class="fas fa-star">
+                                            <i class="fas fa-star"></i>
+                                        </i>
+                                    </i>
+                                </i>
+                            </i>
+                        </div>
+                        <p>It is a long established fact that a reader will be distracted by the readable content</p>
+                        <div class="checkout-icons">
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-envelope"></i>
+                            <i class="fas fa-share-alt"></i>
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="checkout-btn">
+            <button>View More</button>
+        </div>
+    </div>
+
+    <div id="about-type" class="about-type">
+        <div>
+            <div>
+                <div>
+                    <div>
+                        <div><i class="fas fa-books"></i></div>
+                        <div><i class="fas fa-books"></i></div>
+                    </div>
+                    <h4>Books</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s.</p>
+                    <p>View Selection <i class="fal fa-arrow-right"></i></p>
+                </div>
+                <div>
+                    <div>
+                        <div><i class="fas fa-laptop"></i></div>
+                        <div><i class="fas fa-laptop"></i></div>
+                    </div>
+                    <h4>EBooks</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s.</p>
+                    <p>View Selection <i class="fal fa-arrow-right"></i></p>
+                </div>
+                <div>
+                    <div>
+                        <div><i class="fal fa-disc-drive"></i></div>
+                        <div><i class="fal fa-disc-drive"></i></div>
+                    </div>
+                    <h4>DVDS</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s.</p>
+                    <p>View Selection <i class="fal fa-arrow-right"></i></p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div>
+                        <div><i class="fas fa-book-alt"></i></div>
+                        <div><i class="fas fa-book-alt"></i></div>
+                    </div>
+                    <h4>Magazines</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s.</p>
+                    <p>View Selection <i class="fal fa-arrow-right"></i></p>
+                </div>
+                <div>
+                    <div>
+                        <div><i class="fas fa-headphones"></i></div>
+                        <div><i class="fas fa-headphones"></i></div>
+                    </div>
+                    <h4>Audio</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s.</p>
+                    <p>View Selection <i class="fal fa-arrow-right"></i></p>
+                </div>
+                <div>
+                    <div>
+                        <div><i class="fad fa-headset"></i></div>
+                        <div><i class="fad fa-headset"></i></div>
+                    </div>
+                    <h4>eAudio</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s.</p>
+                    <p>View Selection <i class="fal fa-arrow-right"></i></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="subscribe" class="subscribe">
+        <h4>Subscribe to Our NewsLetter</h4>
+        <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.</p>
+        <div>
+            <input type="email" name="email" id="email" class="email" placeholder="Enter Your Email"
+                autocomplete="off" />
+            <button>Subscribe</button>
+        </div>
+    </div>
+
+    <div id="staff" class="staff">
+        <h3>Meet Our Staff</h3>
+        <p>The standard chunk of Lorem Ipsum is used since the 1500s</p>
+        <div>
+            <div>
+                <div>
+                    <h5>Mr. Kyaw Kyaw</h5>
+                    <p>Deputy Director</p>
+                    <div>
+                        <i class="fab fa-linkedin-in"></i>
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-skype"></i>
+                    </div>
+                    <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+                        opposed to using 'Content here...
+                    </p>
+                    <button>Read More</button>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h5>Ms. Zin Zin</h5>
+                    <p>Librarian</p>
+                    <div>
+                        <i class="fab fa-linkedin-in"></i>
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-skype"></i>
+                    </div>
+                    <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+                        opposed to using 'Content here...
+                    </p>
+                    <button>Read More</button>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h5>Mr. Win Win</h5>
+                    <p>Executive Director</p>
+                    <div>
+                        <i class="fab fa-linkedin-in"></i>
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-skype"></i>
+                    </div>
+                    <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+                        opposed to using 'Content here...
+                    </p>
+                    <button>Read More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="news-event" class="news-event">
+        <h4>News & Events</h4>
+        <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.</p>
+        <div>
+            <div>
+                <div></div>
+                <div>
+                    <p><i class="fas fa-caret-right"></i> Events</p>
+                    <div>
+                        <span><i class="far fa-calendar-alt"></i> Oct 13, 2021</span>
+                        <span>|</span>
+                        <span><i class="fas fa-clock"></i> 10:00 am - 10:00 pm</span>
+                        <span>|</span>
+                        <span><i class="fas fa-map-marker-smile"></i> Mandalay, Myanmar</span>
+                    </div>
+                    <p>It uses a dictionary of over 200 latin words</p>
+                    <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+                        opposed to using 'Content here, content here', making it look like readable English. Many
+                        desktop publishing packages and web page editors now use Lorem Ipsum as their default model.</p>
+                    <button>Read More</button>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p><i class="fas fa-caret-right"></i> Events</p>
+                    <div>
+                        <span><i class="far fa-calendar-alt"></i> Oct 13, 2021</span>
+                        <span>|</span>
+                        <span><i class="fas fa-clock"></i> 10:00 am - 10:00 pm</span>
+                        <span>|</span>
+                        <span><i class="fas fa-map-marker-smile"></i> Mandalay, Myanmar</span>
+                    </div>
+                    <p>It uses a dictionary of over 200 latin words</p>
+                    <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+                        opposed to using 'Content here, content here', making it look like readable English. Many
+                        desktop publishing packages and web page editors now use Lorem Ipsum as their default model.</p>
+                    <button>Read More</button>
+                </div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="follow-us" class="follow-us">
+        <h4>Follow us</h4>
+        <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.</p>
+        <div>
+            <div><i class="fab fa-facebook-f"></i></div>
+            <div><i class="fab fa-twitter"></i></div>
+            <div><i class="fab fa-google-plus-g"></i></div>
+            <div><i class="fab fa-linkedin-in"></i></div>
+            <div><i class="fab fa-skype"></i></div>
+            <div><i class="fab fa-youtube"></i></div>
+        </div>
+    </div>
+
+    <div class="bref">
+        <div>
+            <div>
+                <h4>About Libraria</h4>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                    looking.</p>
+                <p><i class="far fa-paper-plane"></i> No.27 Nanpan, Inle, Shan State</p>
+                <p><i class="fas fa-envelope"></i> <a
+                        href="mailto:kyawzinwin1414003@gmail.com">kyawzinwin14142003@gmail.com</a></p>
+                <p><i class="fas fa-phone"></i> <a href="tel:09795020540">09795020540</a></p>
+            </div>
+            <div>
+                <h4>Quick Link</h4>
+                <p><i class="fas fa-chevron-right"></i><a href="#search">About Libraria</a></p>
+                <p><i class="fas fa-chevron-right"></i><a href="#checkout">New Releases</a></p>
+                <p><i class="fas fa-chevron-right"></i><a href="#about-type">About Item Type</a></p>
+                <p><i class="fas fa-chevron-right"></i><a href="#subscribe">Subcribe</a></p>
+                <p><i class="fas fa-chevron-right"></i><a href="#staff">Meet Our Staff</a></p>
+                <p><i class="fas fa-chevron-right"></i><a href="#news-event">News & Event</a></p>
+                <p><i class="fas fa-chevron-right"></i><a href="#follow-us">Follow Us</a></p>
+            </div>
+            <div>
+                <h4>Timing</h4>
+                <p>Mon-Wed:4:00-6:30 pm</p>
+                <p>Thurs-Fri:4:00-7:00 pm</p>
+                <p>Sat-Sun:3:30-6:30 pm</p>
+                <p>
+                    <span>Closing</span>
+                    <span>|</span>
+                    <span>Branches</span>
+                </p>
+            </div>
+            <div>
+                <h4>Latest News</h4>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                    alteration in some form, by injected humour, or randomised words which don't look even slightly
+                    believable.</p>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                    alteration in some form, by injected humour, or randomised words which don't look even slightly
+                    believable.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
